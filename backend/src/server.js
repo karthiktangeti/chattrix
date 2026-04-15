@@ -36,5 +36,9 @@ if (ENV.NODE_ENV === "production") {
 
 connectDB();
 
+server.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+
 // For Vercel compatibility
 export default app;
